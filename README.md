@@ -1,5 +1,13 @@
 # Dart Programming Language 💙
 
+## Table of Contents
+1. [Chapter 1: Built-in Data Type](#chapter-1-built-in-data-type)
+2. [Chapter 2: Variable Declaration](#chapter-2-variable-declaration)
+3. [Chapter 3: Type Conversion](#chapter-2-type-conversion)
+4. [Chapter 4: Conditions](#chapter-3-conditions)
+5. [Chapter 5: Loops](#chapter-4-loops)
+6. [Chapter 6: Functions](#chapter-5-functions)
+   
 ## Chapter 1: Built-in Data Type
 The Dart language has special support for the following:
 #### 1. Integer
