@@ -113,3 +113,47 @@ print(twenty); // Output: 20
 var pi = 3.14316.toStringAsFixed(2);
 print(pi); // Output: 3.14
 ```
+---
+
+## Chapter 3: Conditions
+#### 1. Ternary Operator
+```dart
+int num = 5;
+String res = (num % 2) == 0 ? 'Even' : 'Odd';
+print(res); // Output: Even
+```
+
+#### 2. Null Safety Operator
+```dart
+String? favoriteFood;
+print(favoriteFood ?? 'Cannot be null'); // Output: Cannot be null
+print(favoriteFood!) // Use bang operator (!) to tell the compiler that the value won't be null
+```
+
+#### 3, If Else
+```dart
+int noOfMonth = 5;
+if (noOfMonth == 1) {
+  print("The month is jan");
+} else if (noOfMonth == 2) {
+  print("The month is feb");
+} else {
+  print("Invalid option given.");
+}
+```
+
+#### 4, Switch Case
+```dart
+var dayOfWeek = 5;
+switch (dayOfWeek) {
+  case 1:
+      print("Day is Sunday.");
+      break;
+  case 2:
+      print("Day is Monday.");
+    break;
+  default:
+      print("Invalid Weekday.");
+    break;
+}
+```
