@@ -95,4 +95,21 @@ myAnimeList[0] = 'Barbie'; // **SUCCESS**
 ```
 ---
 
-## Type Conversion
+## Chapter 2: Type Conversion
+```dart
+// String to int
+var one = int.parse('1');
+print(one); // Output: 1
+
+// String to double
+var onePointOne = double.parse('1.1');
+print(onePointOne); // Output: 1.1
+
+// int to String
+var twenty = 20.toString();
+print(twenty); // Output: 20
+
+// double to String
+var pi = 3.14316.toStringAsFixed(2);
+print(pi); // Output: 3.14
+```
