@@ -16,9 +16,9 @@ String name = 'Kelvin';
 
 // String Interpolation
 var language = 'Flutter';
-print("I Love $language"); // Output: I Love Flutter
+print('I Love $language'); // Output: I Love Flutter
 
-String upperCase = '${"hello".toUpperCase()}';
+String upperCase = '${'hello'.toUpperCase()}';
 print(uppercase); // Output:HELLO
 ```
 #### 4. Boolean
@@ -162,7 +162,7 @@ switch (dayOfWeek) {
 ```
 ---
 
-## Chapter 4. Loops
+## Chapter 4: Loops
 #### 1. For
 ```dart
 for (int i = 0; i < 10; i++) {
@@ -199,4 +199,40 @@ do {
   i++;
 } while (i < 5);
 // Output: 1 2 3 4
+```
+---
+
+## Chapter 5: Functions
+```dart
+// We use void if our function doesn't return anything
+void greet(String name) {
+  print('Hello $name');
+}
+
+// Function with return value
+int add(int number1, int number2) {
+  return number1 + number2;
+}
+
+// Optional Positioned Parameter Function
+void optionalPositionedParam(int g1, [ var g2 ]) {
+  print("g1 is $g1");
+  print("g2 is $g2");
+}
+optionalPositionedParam(1)
+
+// Optional Named Parameter Function
+void optionalNamedParam(int g1, { var g2, var g3 }) {
+  print("g1 is $g1");
+  print("g2 is $g2");
+  print("g3 is $g3");
+}
+optionalNamedParam(1, g3 : 12)
+
+// Function with default param
+void defaultParam(int g1, { int g2 : 12 }) {
+  print("g1 is $g1");
+  print("g2 is $g2");
+}
+defaultParam(1)
 ```
