@@ -128,6 +128,9 @@ print(res); // Output: Even
 String? favoriteFood;
 print(favoriteFood ?? 'Cannot be null'); // Output: Cannot be null
 print(favoriteFood!) // Use bang operator (!) to tell the compiler that the value won't be null
+
+int? num = null;
+num ?? = 1; // num will be assigned by 1 if it's null
 ```
 
 #### 3, If-Else
