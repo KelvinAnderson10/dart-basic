@@ -130,7 +130,7 @@ print(favoriteFood ?? 'Cannot be null'); // Output: Cannot be null
 print(favoriteFood!) // Use bang operator (!) to tell the compiler that the value won't be null
 ```
 
-#### 3, If Else
+#### 3, If-Else
 ```dart
 int noOfMonth = 5;
 if (noOfMonth == 1) {
@@ -156,4 +156,44 @@ switch (dayOfWeek) {
       print("Invalid Weekday.");
     break;
 }
+```
+---
+
+## Chapter 4. Loops
+#### 1. For
+```dart
+for (int i = 0; i < 10; i++) {
+  print(i);
+}
+// Output: 0 1 2 3 4 5 6 7 8 9
+```
+
+#### 2. For in
+```dart
+List<String> vocal = ['a', 'i', 'e', 'o'];
+for (String v in vocal) {
+  print(v);
+}
+// Output: a i u e o
+```
+
+#### 3. While
+```dart
+var i = 1;
+while (i < 5) {
+  print(i);
+  i++;
+}
+// Output: 1 2 3 4
+```
+
+#### 4. Do-While
+`do` scope will be executed before checking the `while` statement, meaning do-while will always be executed at least once
+```dart
+var i = 1;
+do {
+  print(i);
+  i++;
+} while (i < 5);
+// Output: 1 2 3 4
 ```
