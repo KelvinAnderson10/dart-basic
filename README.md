@@ -103,7 +103,7 @@ myAnimeList[0] = 'Barbie'; // **SUCCESS**
 ```
 ---
 
-## Chapter 2: Type Conversion
+## Chapter 3: Type Conversion
 ```dart
 // String to int
 var one = int.parse('1');
@@ -123,7 +123,7 @@ print(pi); // Output: 3.14
 ```
 ---
 
-## Chapter 3: Conditions
+## Chapter 4: Conditions
 #### 1. Ternary Operator
 ```dart
 int num = 5;
@@ -170,7 +170,7 @@ switch (dayOfWeek) {
 ```
 ---
 
-## Chapter 4: Loops
+## Chapter 5: Loops
 #### 1. For
 ```dart
 for (int i = 0; i < 10; i++) {
@@ -210,7 +210,7 @@ do {
 ```
 ---
 
-## Chapter 5: Functions
+## Chapter 6: Functions
 ```dart
 // We use void if our function doesn't return anything
 void greet(String name) {
