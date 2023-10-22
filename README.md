@@ -3,10 +3,11 @@
 ## Table of Contents
 1. [Chapter 1: Built-in Data Type](#chapter-1-built-in-data-type)
 2. [Chapter 2: Variable Declaration](#chapter-2-variable-declaration)
-3. [Chapter 3: Type Conversion](#chapter-2-type-conversion)
-4. [Chapter 4: Conditions](#chapter-3-conditions)
-5. [Chapter 5: Loops](#chapter-4-loops)
-6. [Chapter 6: Functions](#chapter-5-functions)
+3. [Chapter 3: Type Conversion](#chapter-3-type-conversion)
+4. [Chapter 4: Conditions](#chapter-4-conditions)
+5. [Chapter 5: Loops](#chapter-5-loops)
+6. [Chapter 6: Functions](#chapter-6-functions)
+7. [Chapter 7: OOP](#chapter-7-oop)
    
 ## Chapter 1: Built-in Data Type
 The Dart language has special support for the following:
@@ -243,4 +244,78 @@ void defaultParam(int g1, { int g2 : 12 }) {
   print("g2 is $g2");
 }
 defaultParam(1)
+```
+---
+## Chapter 7: OOP
+#### 1. Class
+```dart
+class Animal {
+  String name;
+  int age;
+  double weight;
+ 
+  Animal(this.name, this.age, this.weight);
+ 
+  void eat() {
+    print('$name is eating.');
+    weight = weight + 0.2;
+  }
+}
+
+var kucingOyen = Animal('Gray', 2, 4.2);
+
+kucingOyen.eat();
+```
+#### 2. Encapsulation
+```dart
+class Animal {
+   int _age; // With _, the property will be private
+}
+
+void set age(int value) {
+   if (value < 0) {
+      value *= -1;
+   }
+   _age = value;
+}
+
+int get age => _age;
+
+var kucingOyen = Animal();
+kucingOyen.age = 5;
+print(kucingOyen.age);
+```
+#### 3. Inheritance
+```dart
+class Character {
+   int _healthPoint;
+   void set healthPoint(int value) {
+      if (value < 0) {
+         value *= -1;
+      }
+      _healthPoint = value;
+   }
+
+   int get healthPoint => _healthPoint;
+}
+
+class Player extends Character {
+   void attack() {
+      print('Duarrrr');
+   }
+}
+
+class Enemy extends Character {
+   void attack() {
+      print('Rawrrrrr');
+   }
+}
+```
+
+#### 4. Abstraction
+Will be implemented if a certain class must not be instantiated, will receive error when trying to do so
+```dart
+abstract class Animal {
+  String name;
+}
 ```
