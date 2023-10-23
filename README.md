@@ -7,7 +7,7 @@
 4. [Chapter 4: Conditions](#chapter-4-conditions)
 5. [Chapter 5: Loops](#chapter-5-loops)
 6. [Chapter 6: Functions](#chapter-6-functions)
-7. [Chapter 7: OOP](#chapter-7-class-oop)
+7. [Chapter 7: Class & OOP](#chapter-7-class-oop)
    
 ## Chapter 1: Built-in Data Type
 The Dart language has special support for the following:
