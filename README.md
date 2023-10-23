@@ -7,7 +7,7 @@
 4. [Chapter 4: Conditions](#chapter-4-conditions)
 5. [Chapter 5: Loops](#chapter-5-loops)
 6. [Chapter 6: Functions](#chapter-6-functions)
-7. [Chapter 7: OOP](#chapter-7-oop)
+7. [Chapter 7: OOP](#chapter-7-class-oop)
    
 ## Chapter 1: Built-in Data Type
 The Dart language has special support for the following:
@@ -246,7 +246,7 @@ void defaultParam(int g1, { int g2 : 12 }) {
 defaultParam(1)
 ```
 ---
-## Chapter 7: OOP
+## Chapter 7: Class & OOP
 #### 1. Class
 ```dart
 class Animal {
@@ -318,4 +318,14 @@ Will be implemented if a certain class must not be instantiated, will receive er
 abstract class Animal {
   String name;
 }
+```
+
+#### 5. Generic
+```dart
+class Animal<T> {
+   T _age;
+
+   T get age => _age;
+}
+var kucingOyen = Animal<String>(); // _age will become String type
 ```
