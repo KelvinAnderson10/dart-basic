@@ -7,7 +7,7 @@
 4. [Chapter 4: Conditions](#chapter-4-conditions)
 5. [Chapter 5: Loops](#chapter-5-loops)
 6. [Chapter 6: Functions](#chapter-6-functions)
-7. [Chapter 7: Class & OOP](#chapter-7-class-oop)
+7. [Chapter 7: Class & OOP](#chapter-7-class--oop)
    
 ## Chapter 1: Built-in Data Type
 The Dart language has special support for the following:
@@ -312,7 +312,7 @@ class Enemy extends Character {
 }
 ```
 
-#### 4. Abstraction
+#### 4. Abstract Class
 Will be implemented if a certain class must not be instantiated, will receive error when trying to do so
 ```dart
 abstract class Animal {
@@ -320,7 +320,7 @@ abstract class Animal {
 }
 ```
 
-#### 5. Generic
+#### 5. Generic Class
 ```dart
 class Animal<T> {
    T _age;
