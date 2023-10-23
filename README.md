@@ -325,9 +325,10 @@ abstract class Animal {
 class Animal<T> {
    T _age;
 
+   Animal(this.age)
    T get age => _age;
 }
-var kucingOyen = Animal<String>(); // _age will become String type
+var kucingOyen = Animal<String>("Seven"); // _age will become String type
 ```
 
 #### 6. Sealed Class
