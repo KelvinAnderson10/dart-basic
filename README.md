@@ -313,7 +313,7 @@ class Enemy extends Character {
 ```
 
 #### 4. Abstract Class
-Will be implemented if a certain class must not be instantiated, will receive error when trying to do so
+Can be implemented if a certain class must not be instantiated, will receive error when trying to do so
 ```dart
 abstract class Animal {
   String name;
@@ -328,4 +328,18 @@ class Animal<T> {
    T get age => _age;
 }
 var kucingOyen = Animal<String>(); // _age will become String type
+```
+
+#### 6. Sealed Class
+A class that cannot be extended outside of its file. This also means an error will occur when a subclass of the corresponding sealed class is not added when performing pattern matching
+```dart
+sealed class Result {}
+class Success extends Result {}
+class Failed extends Result {}
+
+final Result response = Success('data');
+  switch (response) {
+    case Success():
+    case Failed():  // If we remove this case we will get an error for not implementing all the sub classes of Result
+  }
 ```
